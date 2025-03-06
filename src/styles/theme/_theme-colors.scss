@@ -1,0 +1,50 @@
+@use "sass:map";
+@use "colors" as *;
+@use "settings" as *;
+
+$color-mappings: (
+  "psp": (
+    "dark": (
+      "text-selection-color": rgba($cred-350, 0.1875),
+      "primary": $cred-350,
+      "primary-background": $cred-200,
+      "primary-underline": rgba($cred-350, 0.5),
+      "primary-hover": $cred-250,
+      "primary-hover-background": $cred-150,
+      "primary-focus": rgba($cred-350, 0.375),
+      "primary-inverse": $black,
+      "switch-thumb-box-shadow": 0 0 0.5rem rgba($black, 0.25),
+
+      "secondary": $cblue-350,
+      "secondary-background": $cblue-200,
+      "secondary-underline": rgba($cblue-350, 0.5),
+      "secondary-hover": $cblue-250,
+      "secondary-hover-background": $cblue-150,
+      "secondary-focus": rgba($cblue-350, 0.25),
+      "secondary-inverse": $black,
+    ),
+    "light": (
+      "text-selection-color": rgba($cred-400, 0.25),
+      "primary": $cred-450,
+      "primary-background": $cred-450,
+      "primary-underline": rgba($cred-550, 0.5),
+      "primary-hover": $cred-650,
+      "primary-hover-background": $cred-600,
+      "primary-focus": rgba($cred-400, 0.5),
+      "primary-inverse": $white,
+      "switch-thumb-box-shadow": 0 0 0.5rem rgba($black, 0.25),
+
+      "secondary": $cblue-550,
+      "secondary-background": $cblue-200,
+      "secondary-underline": rgba($cblue-550, 0.5),
+      "secondary-hover": $cblue-650,
+      "secondary-hover-background": $cblue-250,
+      "secondary-focus": rgba($cblue-400, 0.5),
+      "secondary-inverse": $black,
+    ),
+  ),
+);
+
+@function get($key, $mode: "light") {
+  @return map.get(map.get(map.get($color-mappings, $theme-color), $mode), $key);
+}

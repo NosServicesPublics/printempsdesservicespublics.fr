@@ -1,0 +1,77 @@
+label: Contenu
+
+width: 1
+
+type: layout
+
+layouts:
+  - 1/1
+  - '1/2, 1/2'
+  - '1/3, 1/3, 1/3'
+  - '1/3, 2/3'
+  - '2/3, 1/3'
+  - '1/6, 2/3, 1/6'
+  - '1/6, 2/6, 2/6, 1/6'
+
+settings:
+  fields:
+    class:
+      label: Classes CSS additionnelles
+      type: text
+      width: 1/2
+      help: Ajouter des classes CSS additionnelles à la section (séparées par des espaces)
+    id:
+      label: Identifiant HTML
+      type: text
+      width: 1/2
+      help: Ajouter un identifiant à la section
+
+fieldsets:
+
+  pico:
+    label: Pico ui
+    type: group
+    fieldsets:
+      - button
+      - button-group
+      - card
+      - navigation-menu-definer
+      - orgas
+
+  text:
+    label: Texte
+    type: group
+    fieldsets:
+      - heading
+      - text
+
+  media:
+    label: Media
+    type: group
+    fieldsets:
+      - image
+      - video
+      - iframe
+      - embed:
+        name: Média externe
+        icon: youtube
+        fields:
+          embed:
+            type: embed
+
+  styling:
+    label: Style
+    type: group
+    fieldsets:
+      accordion: true
+      line: true
+      spacing: true
+
+  custom:
+    label: Custom
+    type: group
+    fieldsets:
+      navigation-menu-picker: true
+      html-sitemap: true
+      social-media-list: true
+      matomo-opt-out: true

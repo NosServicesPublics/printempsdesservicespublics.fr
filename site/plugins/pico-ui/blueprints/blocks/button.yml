@@ -1,0 +1,31 @@
+name: Bouton
+
+icon: circle
+
+label: '{{ label }}'
+
+fields:
+  label:
+    label: Texte
+    type: text
+    required: true
+    width: 1/2
+  style:
+    label: Style
+    type: select
+    options:
+      primary: Primaire
+      secondary: Secondaire
+      outline: Contour
+      contrast: Contraste
+    default: secondary
+    width: 1/2
+  link:
+    label: Lien
+    type: link
+    required: true
+    width: 1
+  target:
+    label: Ouvrir dans une nouvelle fenêtre
+    type: toggle
+    width: 1/2

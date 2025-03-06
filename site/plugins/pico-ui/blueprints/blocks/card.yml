@@ -1,0 +1,38 @@
+name: Carte
+icon: grid-full
+preview: fields
+wysiwyg: true
+
+fields:
+  title:
+    type: blocks
+    max: 1
+    fieldsets:
+      - heading
+  # subtitle:
+  #   label: Sous-titre
+  #   type: text
+  # image:
+  #   type: files
+  #   max: 1
+  content:
+    label: Contenu
+    type: blocks
+    fieldsets:
+      pico:
+        label: Pico ui
+        type: group
+        fieldsets:
+          - button
+          - button-group
+          - nav
+
+      text:
+        label: Texte
+        type: group
+        fieldsets:
+          - heading
+          - text
+  footer:
+    label: Pied de carte
+    type: writer

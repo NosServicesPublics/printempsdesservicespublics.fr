@@ -1,0 +1,50 @@
+name: Accordéon dépliable
+icon: angle-down
+preview: fields
+wysiwyg: true
+label: '{{ summary }}'
+fields:
+  summary:
+    label: Titre
+    type: text
+    required: true
+  details:
+    label: Contenu
+    type: blocks
+    fieldsets:
+      pico:
+        label: Pico ui
+        type: group
+        fieldsets:
+          - button
+          - button-group
+          - card
+          - nav
+
+      text:
+        label: Texte
+        type: group
+        fieldsets:
+          - heading
+          - text
+
+    placeholder: Saisir le contenu repliable ici
+    required: true
+  toggle:
+    type: toggle
+    text: Ouvert par défaut
+    default: false
+  isButton:
+    label: Styliser comme un bouton
+    type: toggle
+    default: false
+  buttonStyle:
+    type: select
+    options:
+      primary: Primaire
+      secondary: Secondaire
+      outline: Contour
+      contrast: Contraste
+    default: Secondaire
+    when:
+      isButton: true

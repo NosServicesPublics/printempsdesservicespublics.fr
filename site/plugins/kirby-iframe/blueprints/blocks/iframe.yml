@@ -1,0 +1,26 @@
+name: Iframe
+icon: code
+preview: fields
+wysiwyg: true
+fields:
+  url:
+    label: URL
+    type: url
+    required: true
+  width:
+    label: Width
+    type: text
+    default: '100%'
+  height:
+    label: Height
+    type: text
+    default: 400px
+  title:
+    label: Title
+    type: text
+    help: For accessibility purposes
+  useResizer:
+    label: Use iframe resizer
+    type: toggle
+    default: false
+    help: Enable automatic height adjustment based on content

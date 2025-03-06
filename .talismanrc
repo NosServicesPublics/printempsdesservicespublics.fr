@@ -1,0 +1,22 @@
+fileignoreconfig:
+- filename: kirby.config.php
+  checksum: 5848f552d733a0b48667e31de0e4ba357fa42fa99d448daf9c4de914e8e210aa
+- filename: site/config/config.php
+  checksum: 2990a759fdf80c3025f69a46fd045f45dc637025be9ae98e03045d4fb0e8a09c
+- filename: pnpm-lock.yaml
+  checksum: f7f2363cc0ed3717e596997f597f77acf571c9b2bfd62159ee68ca0cc87b305a
+- filename: site/plugins/kirby-navigation-menus/blueprints/blocks/navigation-menu-picker.php
+  checksum: 3a92c6e70eb249bbbba37c6cb968a89b932d638f959138335a8c0731e4be2f7e
+- filename: site/plugins/kirby-navigation-menus/models/navigation-menu-picker.php
+  checksum: 8c8f0c07e0e52dca2b4b44684790b7cce2a29f9bc6bc1e292bdb29d195810a2e
+- filename: src/styles/theme/_theme-colors.scss
+  checksum: 730ca707f5a38a41abdb2c53c48ea7e6a77b5942e4aa90a9b3ff5f14dbde527a
+- filename: site/snippets/header.php
+  checksum: 9e19c850b0a8343e7d8dd4b9d01b731e15c28b89d7bd8fc6e7d4e6784457d659
+- filename: src/styles/theme/_styles.scss
+  checksum: dc1703683d8ba718de578ecf58b08c7486a0d07fa149515148343e02d1d39223
+- filename: site/config/vite.config.php
+  checksum: 049a20bec488ebdbc99a60ef09aed039905a00a902d604cfa1f8003f9b6b98aa
+- filename: www/cleanup.php
+  checksum: 1e88c8838da810c57ea46bb4292847e0af993c65ab4b5b2b8d11f455b95d5cb8
+version: ""

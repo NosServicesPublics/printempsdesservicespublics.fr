@@ -1,0 +1,16 @@
+type: structure
+label: Orgas
+fields:
+  name:
+    label: Name
+    type: text
+  url:
+    label: URL
+    type: url
+  logo:
+    label: Logo
+    extends: fields/image
+    layout: cards
+    width: 1
+    ratio: 1/1
+    crop: true

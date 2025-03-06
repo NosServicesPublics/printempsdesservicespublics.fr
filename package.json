@@ -1,0 +1,54 @@
+{
+  "name": "printempsdesservicespublics.fr",
+  "type": "module",
+  "version": "3.0.0",
+  "description": "Site web du Printemps des Services Publics",
+  "author": "Lucas Poulain (ShallowRed)",
+  "license": "MIT",
+  "homepage": "https://github.com/shallowred/printempsdesservicespublics.fr#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shallowred/printempsdesservicespublics.fr.git"
+  },
+  "bugs": {
+    "url": "https://github.com/shallowred/printempsdesservicespublics.fr/issues"
+  },
+  "keywords": [
+    "kirby",
+    "cms",
+    "vite"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build --emptyOutDir",
+    "lint": "eslint src/scripts && stylelint \"src/styles/**/*.{css,scss}\" && phpcs",
+    "prepare": "npx husky install"
+  },
+  "dependencies": {
+    "@iconify-json/ri": "^1.2.5",
+    "@iframe-resizer/parent": "^5.3.3",
+    "@picocss/pico": "^2.0.6"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^3.13.0",
+    "@unocss/eslint-plugin": "^65.4.0",
+    "@unocss/reset": "^0.62.4",
+    "@unocss/transformer-directives": "^0.62.4",
+    "eslint": "^9.17.0",
+    "glob": "^11.0.1",
+    "husky": "^8.0.3",
+    "postcss-combine-duplicated-selectors": "^10.0.3",
+    "postcss-combine-media-query": "^1.0.1",
+    "postcss-normalize": "^13.0.1",
+    "sass": "^1.83.1",
+    "stylelint": "^16.12.0",
+    "stylelint-config-standard-scss": "^13.1.0",
+    "talisman": "^1.1.4",
+    "unocss": "^0.62.4",
+    "vite": "^5.4.11",
+    "vite-plugin-eslint": "^1.8.1",
+    "vite-plugin-kirby": "^5.4.0",
+    "vite-plugin-sass-glob-import": "^3.0.2",
+    "vite-plugin-stylelint": "^5.3.1"
+  }
+}

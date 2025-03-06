@@ -1,0 +1,11 @@
+name: Groupe de boutons
+
+icon: circle
+preview: fields
+wysiwyg: true
+fields:
+  buttons:
+    label: Boutons
+    type: blocks
+    fieldsets:
+      - button

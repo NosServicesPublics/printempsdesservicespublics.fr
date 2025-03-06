@@ -1,0 +1,27 @@
+name: Menu de navigation
+icon: menu
+preview: fields
+wysiwyg: true
+fields:
+  brand:
+    label: Bloc identité
+    type: blocks
+    fieldsets:
+      - text
+      - image
+      - site-logo
+  items:
+    extends: fields/nav-items
+  breadcrumb:
+    label: Fil d'Ariane
+    type: toggle
+    default: false
+  layout:
+    label: Disposition
+    type: select
+    default: horizontal
+    when:
+      breadcrumb: false
+    options:
+      horizontal: Horizontale
+      vertical: Verticale

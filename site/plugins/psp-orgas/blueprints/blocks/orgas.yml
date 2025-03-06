@@ -1,0 +1,16 @@
+name: Organisations
+icon: users
+
+preview: fields
+wysiwyg: true
+
+fields:
+  orgas:
+    label: Organisations
+    type: multiselect
+    options:
+      type: query
+      query: collection('orgas')
+      text: '{{ item.name }}'
+      value: '{{ item.name }}'
+      empty: No organisations available

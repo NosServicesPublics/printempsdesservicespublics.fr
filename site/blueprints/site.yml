@@ -1,0 +1,69 @@
+tabs:
+  pages:
+    label: Pages
+    icon: draft
+    columns:
+      - width: 1/2
+        sections:
+          listed:
+            headline: Pages brouillon
+            type: pages
+            status: draft
+            image:
+              back: white
+      - width: 1/2
+        sections:
+          unlistedpages:
+            type: pages
+            status: unlisted
+            headline: Pages non référencées
+            image:
+              back: white
+      - width: 1/2
+        sections:
+          mainpages:
+            type: pages
+            status: listed
+            headline: Pages publiées
+            image:
+              back: white
+  menus:
+    label: Menus
+    icon: menu
+    columns:
+      - width: 1
+        sections:
+          - sections/declared-navigation-menus
+      - width: 1
+        fields:
+          header:
+            label: En-tête
+            extends: fields/layout
+      - width: 1
+        fields:
+          footer:
+            label: Pied de page
+            extends: fields/layout
+  orgas:
+    label: Orgas
+    icon: users
+    columns:
+      - width: 1
+        fields:
+          orgas:
+            extends: fields/orgas
+  seo:
+    label: SEO
+    extends: seo/site
+  analytics:
+    label: Audience
+    icon: chart
+    columns:
+      - width: 2/3
+        sections:
+          matomomain:
+            type: matomo-main
+      - width: 1/3
+        sections:
+          matomoside:
+            type: matomo-sidebar

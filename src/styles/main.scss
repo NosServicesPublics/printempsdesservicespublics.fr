@@ -1,0 +1,15 @@
+@use "@picocss/pico/scss/pico" with (
+  $enable-semantic-container: true,
+  $enable-responsive-spacings: true,
+  $enable-classes: true,
+  $modules: (
+    'content/button': true,
+    "themes/default": false
+  )
+);
+@forward "components/";
+@use "theme/" as *;
+
+:root{
+  --pico-button-hover-box-shadow:  var(--pico-group-box-shadow-focus-with-button) !important;
+}
