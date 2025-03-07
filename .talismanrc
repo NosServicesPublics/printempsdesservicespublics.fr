@@ -19,4 +19,6 @@ fileignoreconfig:
   checksum: 049a20bec488ebdbc99a60ef09aed039905a00a902d604cfa1f8003f9b6b98aa
 - filename: www/cleanup.php
   checksum: 1e88c8838da810c57ea46bb4292847e0af993c65ab4b5b2b8d11f455b95d5cb8
+- filename: content
+  checksum: e150ef5fbc0510021d2ae0f6c9970272b10b87161eda659ac9d1eb4f446bf15a
 version: ""

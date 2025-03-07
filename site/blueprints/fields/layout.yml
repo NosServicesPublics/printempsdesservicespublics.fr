@@ -28,25 +28,31 @@ settings:
 
 fieldsets:
 
-  pico:
-    label: Pico ui
-    type: group
-    fieldsets:
-      - button
-      - button-group
-      - card
-      - navigation-menu-definer
-      - orgas
-
   text:
-    label: Texte
+    label: Textes
     type: group
     fieldsets:
       - heading
       - text
 
+  ui:
+    label: Composants UI
+    type: group
+    fieldsets:
+      - button
+      - button-group
+      - card
+      - accordion
+
+  styling:
+    label: Style
+    type: group
+    fieldsets:
+      line: true
+      spacing: true
+
   media:
-    label: Media
+    label: Medias
     type: group
     fieldsets:
       - image
@@ -59,19 +65,21 @@ fieldsets:
           embed:
             type: embed
 
-  styling:
-    label: Style
-    type: group
-    fieldsets:
-      accordion: true
-      line: true
-      spacing: true
+  menus:
+    - navigation-menu-picker
+    - navigation-menu-definer
 
-  custom:
-    label: Custom
+  psp:
+    open: false
+    label: Éléments customisés pour le Printemps des Services Publics
     type: group
     fieldsets:
-      navigation-menu-picker: true
+      - orgas
+
+  html:
+    open: false
+    label: Éléments HTML particuliers
+    type: group
+    fieldsets:
       html-sitemap: true
-      social-media-list: true
       matomo-opt-out: true
