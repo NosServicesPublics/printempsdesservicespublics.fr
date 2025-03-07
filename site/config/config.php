@@ -89,8 +89,6 @@ return [
   'ready' => function () {
     return [
       'sylvainjule.matomo' => option('secrets.sylvainjule.matomo'),
-      'tobimori.dreamform' => option('secrets.tobimori.dreamform'),
-
       'cache' => [
         'pages' => [
           'active'  => false,
